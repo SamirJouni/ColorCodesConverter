@@ -1,3 +1,11 @@
+/*
+
+Some Boilerplate Code That I usually use in projects To Prevent
+Unexpected Behavior From Browsers' User Agent Style Sheet. In Other Words,
+This Is a CSS Reset.
+
+*/
+
 html, body {
   margin: 0;
   padding: 0;
