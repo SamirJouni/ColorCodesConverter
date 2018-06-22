@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 	"use strict";
+
 /* Convert hex-a to rgba and vice versa */
+
+/* This function takes a color value of either hex or rgb */
 	function convertColor(color) {
 		var convertedColor;
 
