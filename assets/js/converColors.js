@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			return "Error ! \nPlease Enter A Proper Input. \nHex starts with an octothorpe and has 6 trailing numbers, rgb is enclsed in paranthesis and seperated with commas. ";
 		}
-
+/* This function takes a hex color code and converts it to rgb. Value should be preceeded with
+an octothorpe like so: #ffffff */
 		function convertHexToRgb(color) {
 			var hexNumber = color.slice(1);
 			var r = parseInt(hexNumber.substring(0, 2), 16);
