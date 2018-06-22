@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 	"use strict";
 
-/* Convert hex-a to rgba and vice versa */
+	/* Convert hex-a to rgba and vice versa */
 
-/* This function takes a color value of either hex or rgb */
+	/* This function takes a color value of either hex or rgb */
 	function convertColor(color) {
 		var convertedColor;
 
@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			return "Error ! \nPlease Enter A Proper Input. \nHex starts with an octothorpe and has 6 trailing numbers, rgb is enclsed in paranthesis and seperated with commas. ";
 		}
-/* This function takes a hex color code and converts it to rgb. Value should be preceeded with
-an octothorpe like so: #ffffff */
+
+		/* This function takes a hex color code and converts it to rgb. Value should be preceeded with
+		an octothorpe like so: #ffffff */
 		function convertHexToRgb(color) {
 			var hexNumber = color.slice(1);
 			var r = parseInt(hexNumber.substring(0, 2), 16);
@@ -30,6 +31,8 @@ an octothorpe like so: #ffffff */
 			return "(" + r + "," + g + "," + b + (a !== '' ? ',' : '') + a + ")";
 		}
 
+		/* This function converts an rgb color code, and converts it to hex. Value should be wrapped in
+		paranthesis like so: (255, 255, 255,)*/
 		function convertRgbToHex(color) {
 			color = color.slice(1, -1).split(',');
 			var r = color[0];
