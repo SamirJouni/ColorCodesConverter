@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			return "#" + numberToHex(r) + numberToHex(g) + numberToHex(b) + (color.length === 4 ? numberToHex(a) : '');
 		}
 
+		/* This function converts a number from base 10 ( Decimal ) to base 16 ( Hexadecimal),
+		and only takes an input of a decimal number. */
 		function numberToHex(number) {
 			var numberInHex = Number(number).toString(16);
 			return numberInHex.length == 1 ? "0" + numberInHex : numberInHex;
