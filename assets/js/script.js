@@ -10,7 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	button.addEventListener('click', getInput);
 
 	function getInput(){
-
+		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()){
+			console.log('seiko');
+		}
+	}
+	function inputValueSpecified(){
+		return true;
 	}
 
 });
