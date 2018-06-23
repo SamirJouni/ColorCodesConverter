@@ -6,4 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	var button = document.getElementById('convert');
 	var output = document.getElementById('output');
 
+	inputField.addEventListener('keypress', getInput);
+	button.addEventListener('click', getInput);
+
+	function getInput(){
+
+	}
+
 });
