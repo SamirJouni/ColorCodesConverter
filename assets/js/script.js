@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	"use strict";
-/* This is it the main script file for general scripts regarding the page */
+	/* This is it the main script file for general scripts regarding the page */
 
 	var inputField = document.getElementById('colorCode');
 	var button = document.getElementById('convert');
@@ -9,21 +9,26 @@ document.addEventListener('DOMContentLoaded', function () {
 	inputField.addEventListener('keypress', getInput);
 	button.addEventListener('click', getInput);
 
-	function getInput(){
-		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()){
+	function getInput() {
+		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()) {
 			console.log('seiko');
 		}
 	}
-	function inputValueSpecified(){
-		if (inputField.value !== ''){
+
+	function inputValueSpecified() {
+		if (inputField.value !== '') {
 			return true;
 		}
 
 		return false;
 	}
-	function createOutputElement (){
+
+	function createOutputElement() {
 		var outputElement = document.createElement('span');
 
+		outputElement.textContent = 'The Color is: ' + convertedColor;
+		output.appendChild(outputElement);
 
+		inputField.value = '';
 	}
 });
