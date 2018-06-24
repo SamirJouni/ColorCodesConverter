@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 	function inputValueSpecified(){
-		return true;
+		if (inputField.value !== ''){
+			return true;
+		}
+
+		return false;
 	}
 
 });
