@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			var b = parseInt(hexNumber.substring(4, 6), 16);
 			var a = hexNumber.length === 8 ? Math.round(parseInt(hexNumber.substring(6, 8), 16) / 255) : '';
 
-			return "(" + r + "," + g + "," + b + (a !== '' ? ',' : '') + a + ")";
+			return (a !== '' ? 'rgba' : 'rgb') + "(" + r + "," + g + "," + b + (a !== '' ? ',' : '') + a + ")";
 		}
 
 		/* This function converts an rgb color code, and converts it to hex. Value should be wrapped in
