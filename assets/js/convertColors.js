@@ -1,10 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-	"use strict";
-
 	/* Convert hex-a to rgba and vice versa */
 
 	/* This function takes a color value of either hex or rgb */
 	function convertColor(color) {
+		"use strict";
+
 		var convertedColor;
 
 		if (color[0] === '#') {
@@ -51,4 +50,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		return convertedColor;
 	}
-});

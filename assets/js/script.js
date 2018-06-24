@@ -6,12 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
 	var button = document.getElementById('convert');
 	var output = document.getElementById('output');
 
+
 	inputField.addEventListener('keypress', getInput);
 	button.addEventListener('click', getInput);
 
 	function getInput() {
 		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()) {
-			console.log('seiko');
+			if (inputValueSpecified()) {
+
+				createOutputElement();
+			}
 		}
 	}
 
@@ -26,9 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	function createOutputElement() {
 		var outputElement = document.createElement('span');
 
-		outputElement.textContent = 'The Color is: ' + convertedColor;
+		outputElement.textContent = 'The Color is: ' + convertColorInput();
 		output.appendChild(outputElement);
 
 		inputField.value = '';
+	}
+
+	function convertColorInput () {
+		return convertColor(inputField.value);
 	}
 });
