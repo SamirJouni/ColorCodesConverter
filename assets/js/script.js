@@ -21,4 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		return false;
 	}
+	function createOutputElement (){
+		var outputElement = document.createElement('span');
+
+
+	}
 });
