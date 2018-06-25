@@ -15,7 +15,7 @@
 			convertedColor = convertRgbToHex(color);
 		} else {
 
-			return "Error ! \nPlease Enter A Proper Input. \nHex starts with an octothorpe and has 6 trailing numbers, rgb is enclsed in paranthesis and seperated with commas. ";
+			return "Error ! \nPlease Enter A Proper Input. \nHex starts with an octothorpe and has 6 trailing numbers, rgb is enclosed in paranthesis and seperated with commas. ";
 		}
 
 		/* This function takes a hex color code and converts it to rgb. Value should be preceeded with

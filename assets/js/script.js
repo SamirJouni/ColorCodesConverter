@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()) {
 			if (inputValueSpecified()) {
 
+				removePreviousOutputs();
 				createOutputElement();
 			}
 		}
@@ -34,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		output.appendChild(outputElement);
 
 		inputField.value = '';
+	}
+
+	function removePreviousOutputs () {
+		while (output.lastChild) {
+			output.removeChild(output.lastChild);
+		}
 	}
 
 	function convertColorInput () {
