@@ -46,4 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	function convertColorInput () {
 		return convertColor(inputField.value);
 	}
+
+	function setBackgroundTo (){
+
+	}
 });
