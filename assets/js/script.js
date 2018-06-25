@@ -37,13 +37,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		inputField.value = '';
 	}
 
-	function removePreviousOutputs () {
+	function removePreviousOutputs() {
 		while (output.lastChild) {
 			output.removeChild(output.lastChild);
 		}
 	}
 
-	function convertColorInput () {
+	function convertColorInput() {
 		return convertColor(inputField.value);
+	}
+
+	function setBackgroundTo() {
+
 	}
 });
