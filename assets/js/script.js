@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	"use strict";
 	/* This is it the main script file for general scripts regarding the page */
 
+	/* These are variables that will be needed later in the script */
 	var inputField = document.getElementById('colorCode');
 	var button = document.getElementById('convert');
 	var output = document.getElementById('output');
 
 
+	/* These are event listeners that call the getInput function when the user wants to submit the input */
 	inputField.addEventListener('keypress', getInput);
 	button.addEventListener('click', getInput);
 
