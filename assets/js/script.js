@@ -47,11 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		return convertColor(inputField.value);
 	}
 
-<<<<<<< HEAD
-	function setBackgroundTo (){
-=======
 	function setBackgroundTo() {
->>>>>>> e05e8cf5445f822bd15c69df396c8707d90a75fc
 
 	}
 });
