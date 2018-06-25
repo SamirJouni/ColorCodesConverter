@@ -37,17 +37,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		inputField.value = '';
 	}
 
-	function removePreviousOutputs () {
+	function removePreviousOutputs() {
 		while (output.lastChild) {
 			output.removeChild(output.lastChild);
 		}
 	}
 
-	function convertColorInput () {
+	function convertColorInput() {
 		return convertColor(inputField.value);
 	}
 
+<<<<<<< HEAD
 	function setBackgroundTo (){
+=======
+	function setBackgroundTo() {
+>>>>>>> e05e8cf5445f822bd15c69df396c8707d90a75fc
 
 	}
 });
