@@ -6,7 +6,8 @@ This Is a CSS Reset.
 
 */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -27,6 +28,7 @@ html, body {
 ::placeholder {
   opacity: 1;
 }
+
 .center {
   text-align: center;
   margin-left: auto;
@@ -34,6 +36,7 @@ html, body {
 }
 
 /* Site Styles */
+
 body {
   font-family: 'Roboto', sans-serif;
 }
