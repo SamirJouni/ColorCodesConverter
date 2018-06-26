@@ -33,6 +33,8 @@ calls the function that will output the result of the conversion */
 		return false;
 	}
 
+	/* This function calls a function that converts the input and then creates and appends the
+	output element */
 	function createOutputElement() {
 		var outputElement = document.createElement('span');
 
