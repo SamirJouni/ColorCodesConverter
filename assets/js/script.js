@@ -57,6 +57,7 @@ calls the function that will output the result of the conversion */
 		return convertColor(inputField.value);
 	}
 
+	/* This function changes the background to a gradient of the color being input */
 	function setBackgroundTo() {
 
 	}
