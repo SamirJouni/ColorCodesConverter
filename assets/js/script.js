@@ -24,6 +24,7 @@ calls the function that will output the result of the conversion */
 		}
 	}
 
+	/* Checks if the user has actually typed anything in the input field before submitting */
 	function inputValueSpecified() {
 		if (inputField.value !== '') {
 			return true;
