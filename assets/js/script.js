@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	var inputField = document.getElementById('colorCode');
 	var button = document.getElementById('convert');
 	var output = document.getElementById('output');
+	var body = document.getElementsByTagName('body')[0];
 
 
 	/* These are event listeners that call the getInput function when the user wants to submit the input */
@@ -18,6 +19,7 @@ calls the function that will output the result of the conversion */
 		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()) {
 			if (inputValueSpecified()) {
 
+				setBackgroundTo();
 				removePreviousOutputs();
 				createOutputElement();
 			}
@@ -59,6 +61,11 @@ calls the function that will output the result of the conversion */
 
 	/* This function changes the background to a gradient of the color being input */
 	function setBackgroundTo() {
+		body.style.backgroundImage = 'linear-gradient('
+		+ '90deg' + ', ' + inputField.value + ', ' + shiftColor() + ')';
+	}
+
+	function shiftColor(inputField.value){
 
 	}
 });
