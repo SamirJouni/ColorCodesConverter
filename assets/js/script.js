@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}
 	}
-
 	function inputValueSpecified() {
 		if (inputField.value !== '') {
 			return true;
