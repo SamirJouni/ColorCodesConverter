@@ -44,6 +44,7 @@ calls the function that will output the result of the conversion */
 		inputField.value = '';
 	}
 
+	/* This function cleans up previous outputs to make sure older outputs don't stick around */
 	function removePreviousOutputs() {
 		while (output.lastChild) {
 			output.removeChild(output.lastChild);
