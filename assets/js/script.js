@@ -19,7 +19,7 @@ calls the function that will output the result of the conversion */
 		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()) {
 			if (inputValueSpecified()) {
 
-				setBackgroundTo();
+				setBackgroundToColor();
 				removePreviousOutputs();
 				createOutputElement();
 			}
@@ -60,12 +60,12 @@ calls the function that will output the result of the conversion */
 	}
 
 	/* This function changes the background to a gradient of the color being input */
-	function setBackgroundTo() {
+	function setBackgroundToColor() {
 		body.style.backgroundImage = 'linear-gradient('
 		+ '90deg' + ', ' + inputField.value + ', ' + shiftColor() + ')';
 	}
 
-	function shiftColor(inputField.value){
+	function shiftColor(){
 
 	}
 });
