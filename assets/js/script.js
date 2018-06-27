@@ -56,7 +56,8 @@ caches the input and calls the function that will output the result of the conve
 	}
 
 	/* This function converts the color code that the user inputs into the other color code format
-	with auto detection for the inserted format */
+	with auto detection for the inserted format. It also sets the input cache to always be in hex
+	format for the background setting function. */
 	function convertColorInput() {
 		if (inputCache[0] === '#') {
 
