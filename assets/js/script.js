@@ -58,7 +58,16 @@ caches the input and calls the function that will output the result of the conve
 	/* This function converts the color code that the user inputs into the other color code format
 	with auto detection for the inserted format */
 	function convertColorInput() {
-		return convertColor(inputCache);
+		if (inputCache[0] === '#') {
+
+			return convertColor(inputCache);
+		}
+		else {
+
+			inputCache = convertColor(inputCache);
+			return inputCache;
+		}
+
 	}
 
 	/* This function changes the background to a gradient of the color being input */
