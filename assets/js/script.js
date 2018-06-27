@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	var button = document.getElementById('convert');
 	var output = document.getElementById('output');
 	var body = document.getElementsByTagName('body')[0];
-
+	var inputCache = '';
 
 	/* These are event listeners that call the getInput function when the user wants to submit the input */
 	inputField.addEventListener('keypress', getInput);
@@ -61,8 +61,8 @@ calls the function that will output the result of the conversion */
 
 	/* This function changes the background to a gradient of the color being input */
 	function setBackgroundToColor() {
-		body.style.backgroundImage = 'linear-gradient('
-		+ '90deg' + ', ' + inputField.value + ', ' + shiftColor() + ')';
+		body.style.backgroundImage = 'linear-gradient(' +
+		 '90deg' + ', ' + inputField.value + ', ' + shiftColor() + ')';
 	}
 
 	function shiftColor(){
