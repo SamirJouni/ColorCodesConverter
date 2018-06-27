@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
 /* This function checks if the user has input something, checks if the input is being submitted, then
 calls the function that will output the result of the conversion */
 	function getInput() {
-		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()) {
-			inputCache = inputField.value;
-
+		if (event.keyCode === 13 || event.button === 0) {
 			if (inputValueSpecified()) {
+
+				inputCache = inputField.value;
 
 				setBackgroundToColor();
 				removePreviousOutputs();
