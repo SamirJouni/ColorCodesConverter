@@ -58,13 +58,13 @@ calls the function that will output the result of the conversion */
 	/* This function converts the color code that the user inputs into the other color code format
 	with auto detection for the inserted format */
 	function convertColorInput() {
-		return convertColor(inputField.value);
+		return convertColor(inputCache);
 	}
 
 	/* This function changes the background to a gradient of the color being input */
 	function setBackgroundToColor() {
 		body.style.backgroundImage = 'linear-gradient(' +
-		 '90deg' + ', ' + inputField.value + ', ' + shiftColor() + ')';
+		 '90deg' + ', ' + inputCache + ', ' + shiftColor() + ')';
 	}
 
 	function shiftColor(){
