@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 calls the function that will output the result of the conversion */
 	function getInput() {
 		if ((event.keyCode === 13 || event.button === 0) && inputValueSpecified()) {
+			inputCache = inputField.value;
+
 			if (inputValueSpecified()) {
 
 				setBackgroundToColor();
