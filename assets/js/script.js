@@ -71,7 +71,8 @@ caches the input and calls the function that will output the result of the conve
 
 	}
 
-	/* This function changes the background to a gradient of the color being input */
+	/* This function changes the background to a gradient of the color being input and a complimentary
+	color */
 	function setBackgroundToColor() {
 		body.style.backgroundImage = 'linear-gradient(' +
 		 '90deg' + ', ' + inputCache + ', ' + shiftColor() + ')';
