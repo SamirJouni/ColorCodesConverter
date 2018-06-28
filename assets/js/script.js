@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	inputField.addEventListener('keypress', getInput);
 	button.addEventListener('click', getInput);
 
-/* This function checks if the user has input something, checks if the input is being submitted, then
-caches the input and calls the function that will output the result of the conversion */
+	/* This function checks if the user has input something, checks if the input is being submitted, then
+	caches the input and calls the function that will output the result of the conversion */
 	function getInput() {
 		if (event.keyCode === 13 || event.button === 0) {
 			if (inputValueSpecified()) {
@@ -62,8 +62,7 @@ caches the input and calls the function that will output the result of the conve
 		if (inputCache[0] === '#') {
 
 			return convertColor(inputCache);
-		}
-		else {
+		} else {
 
 			inputCache = convertColor(inputCache);
 			return inputCache;
@@ -75,10 +74,10 @@ caches the input and calls the function that will output the result of the conve
 	color */
 	function setBackgroundToColor() {
 		body.style.backgroundImage = 'linear-gradient(' +
-		 '90deg' + ', ' + inputCache + ', ' + shiftColor() + ')';
+			'90deg' + ', ' + inputCache + ', ' + shiftColor() + ')';
 	}
 
-	function shiftColor(){
+	function shiftColor() {
 
 	}
 });
