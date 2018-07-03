@@ -48,3 +48,9 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.inputWrapper div {
+  margin: 1vw 0;
+}
+.output {
+  height: 2vw;
+}
