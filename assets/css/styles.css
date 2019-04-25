@@ -59,6 +59,7 @@ body {
   border-bottom: .1rem black solid;
   padding: .5rem 2rem;
   font-size: 1.2rem;
+  text-align: center;
 }
 .button {
   cursor: pointer;
