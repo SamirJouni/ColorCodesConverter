@@ -56,7 +56,7 @@ body {
 }
 #colorCode {
   border: none;
-  border-bottom: .1rem black solid;
+  border-bottom: .1rem #464748 solid;
   padding: .5rem 2rem;
   font-size: 1.2rem;
   text-align: center;
