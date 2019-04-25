@@ -38,12 +38,18 @@ body {
 /* Site Styles */
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   background: linear-gradient(217deg,
     rgba(255, 0, 0, 0.9),
     rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, rgba(0, 255, 0, 0.97), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.95), rgba(0, 0, 255, 0) 70.71%);
+    width: 100vw;
+    height: 100vh;
 }
 
 .inputWrapper {
@@ -51,8 +57,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: fit-content;
+  height: auto;
+  background: #ffffff;
+  border-radius: 5%;
+  padding: 2.5rem;
 }
 
 .inputWrapper div {
