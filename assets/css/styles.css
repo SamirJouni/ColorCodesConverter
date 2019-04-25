@@ -70,3 +70,7 @@ body {
 .button:hover {
   opacity: .6;
 }
+#output {
+  color: black;
+  font-size: 1.2rem;
+}
