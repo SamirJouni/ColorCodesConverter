@@ -25,6 +25,8 @@
 			var hexLength = hexNumber.length;
 			if(hexLength === 3){
 				hexNumber += hexNumber;
+			} else if (hexLength < 6) {
+				hexNumber = hexNumber + "0".repeat(6 - hexLength);
 			}
 			var r = parseInt(hexNumber.substring(0, 2), 16);
 			var g = parseInt(hexNumber.substring(2, 4), 16);
