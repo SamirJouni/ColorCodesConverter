@@ -51,7 +51,16 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 3rem;
+}
+.icon > img {
+  width: 5rem;
+  height: 5rem;
+}
 .inputWrapper {
   display: flex;
   flex-direction: column;
