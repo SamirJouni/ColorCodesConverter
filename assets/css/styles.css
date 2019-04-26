@@ -56,10 +56,12 @@ body {
   top: 0;
   left: 0;
   margin: 3rem;
-  transition: transform .8s linear;
+  opacity: .9;
+  transition: transform.8s linear, opacity .4s ease-in-out;
 }
 .icon:hover {
   transform: rotateZ(20deg);
+  opacity: 1;
 }
 .icon > img {
   width: 5rem;
