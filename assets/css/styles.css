@@ -71,6 +71,7 @@ body {
 
 .output {
   max-width: 15rem;
+  text-align: center;
 }
 
 #colorCode {
