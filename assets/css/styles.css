@@ -56,6 +56,10 @@ body {
   top: 0;
   left: 0;
   margin: 3rem;
+  transition: transform .8s linear;
+}
+.icon:hover {
+  transform: rotateZ(20deg);
 }
 .icon > img {
   width: 5rem;
