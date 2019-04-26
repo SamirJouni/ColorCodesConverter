@@ -22,6 +22,9 @@
 		an octothorpe like so: #ffffff */
 		function convertHexToRgb(color) {
 			var hexNumber = color.slice(1);
+			if(hexNumber.length === 3){
+				hexNumber += hexNumber;
+			}
 			var r = parseInt(hexNumber.substring(0, 2), 16);
 			var g = parseInt(hexNumber.substring(2, 4), 16);
 			var b = parseInt(hexNumber.substring(4, 6), 16);
