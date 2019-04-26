@@ -22,13 +22,14 @@
 		an octothorpe like so: #ffffff */
 		function convertHexToRgb(color) {
 			var hexNumber = color.slice(1);
-			if(hexNumber.length === 3){
+			var hexLength = hexNumber.length;
+			if(hexLength === 3){
 				hexNumber += hexNumber;
 			}
 			var r = parseInt(hexNumber.substring(0, 2), 16);
 			var g = parseInt(hexNumber.substring(2, 4), 16);
 			var b = parseInt(hexNumber.substring(4, 6), 16);
-			var a = hexNumber.length === 8 ? Math.round(parseInt(hexNumber.substring(6, 8), 16) / 255) : '';
+			var a = hexLength === 8 ? Math.round(parseInt(hexNumber.substring(6, 8), 16) / 255) : '';
 
 			return (a !== '' ? 'rgba' : 'rgb') + "(" + r + "," + g + "," + b + (a !== '' ? ',' : '') + a + ")";
 		}
@@ -37,11 +38,12 @@
 		paranthesis like so: (255, 255, 255,)*/
 		function convertRgbToHex(color) {
 			color = color.slice(1, -1).split(',');
+			colorLength = color.length;
 			var r = color[0];
 			var g = color[1];
 			var b = color[2];
-			var a = color.length === 4 ? Math.round(color[3] * 255) : '';
-			return "#" + numberToHex(r) + numberToHex(g) + numberToHex(b) + (color.length === 4 ? numberToHex(a) : '');
+			var a = colorLength === 4 ? Math.round(color[3] * 255) : '';
+			return "#" + numberToHex(r) + numberToHex(g) + numberToHex(b) + (colorLength === 4 ? numberToHex(a) : '');
 		}
 
 		/* This function converts a number from base 10 ( Decimal ) to base 16 ( Hexadecimal),
