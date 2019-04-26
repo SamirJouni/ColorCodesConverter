@@ -59,9 +59,10 @@ body {
   align-items: center;
   width: fit-content;
   height: auto;
-  background: #ffffff;
+  background: #ffffffd9;
   border-radius: 5%;
   padding: 2.5rem;
+  border: .08rem #464748b3 solid;
 }
 
 .inputWrapper div {
@@ -69,15 +70,16 @@ body {
 }
 
 .output {
-  height: 2vw;
+  max-width: 15rem;
 }
 
 #colorCode {
   border: none;
   border-bottom: 0.1rem #464748 solid;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
   text-align: center;
+  background-color: transparent;
 }
 
 .button {
