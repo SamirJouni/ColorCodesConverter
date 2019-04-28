@@ -83,7 +83,7 @@ body {
 }
 
 .inputWrapper div {
-	margin: 1vw 0;
+	margin: 1.5rem 0;
 }
 
 .output {
@@ -115,4 +115,10 @@ body {
 #output {
 	color: #464748;
 	font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 320px) {
+	.inputWrapper {
+		padding: 1rem;
+	}
 }
