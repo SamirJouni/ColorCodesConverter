@@ -8,109 +8,111 @@ This Is a CSS Reset.
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
 }
 
 * {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 *:focus {
-  outline: none;
+	outline: none;
 }
 
 ::placeholder {
-  opacity: 1;
+	opacity: 1;
 }
 
 .center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Site Styles */
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(217deg,
-    rgba(255, 0, 0, 0.9),
-    rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.97), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.95), rgba(0, 0, 255, 0) 70.71%);
-    width: 100vw;
-    height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto", sans-serif;
+	background: linear-gradient(
+			217deg,
+			rgba(255, 0, 0, 0.9),
+			rgba(255, 0, 0, 0) 70.71%
+		),
+		linear-gradient(127deg, rgba(0, 255, 0, 0.97), rgba(0, 255, 0, 0) 70.71%),
+		linear-gradient(336deg, rgba(0, 0, 255, 0.95), rgba(0, 0, 255, 0) 70.71%);
+	width: 100vw;
+	height: 100vh;
 }
 .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 3rem;
-  opacity: .9;
-  transition: transform.8s linear, opacity .4s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 3rem;
+	opacity: 0.9;
+	transition: transform.8s linear, opacity 0.4s ease-in-out;
 }
 .icon:hover {
-  transform: rotateZ(20deg);
-  opacity: 1;
+	transform: rotateZ(20deg);
+	opacity: 1;
 }
 .icon > img {
-  width: 5rem;
-  height: 5rem;
+	width: 5rem;
+	height: 5rem;
 }
 .inputWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  height: auto;
-  background: #ffffffd9;
-  border-radius: 5%;
-  padding: 2.5rem;
-  border: .08rem #464748b3 solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	height: auto;
+	background: #ffffffd9;
+	border-radius: 5%;
+	padding: 2.5rem;
+	border: 0.08rem #464748b3 solid;
 }
 
 .inputWrapper div {
-  margin: 1vw 0;
+	margin: 1vw 0;
 }
 
 .output {
-  max-width: 15rem;
-  text-align: center;
+	max-width: 15rem;
+	text-align: center;
 }
 
 #colorCode {
-  border: none;
-  border-bottom: 0.1rem #464748 solid;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  text-align: center;
-  background-color: transparent;
+	border: none;
+	border-bottom: 0.1rem #464748 solid;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	text-align: center;
+	background-color: transparent;
 }
 
 .button {
-  color: #464748;
-  cursor: pointer;
-  font-size: 1.3rem;
-  transition: opacity 0.1s ease-out;
+	color: #464748;
+	cursor: pointer;
+	font-size: 1.3rem;
+	transition: opacity 0.1s ease-out;
 }
 
 #colorCode:hover,
 .button:hover {
-  opacity: 0.6;
+	opacity: 0.6;
 }
 
 #output {
-  color: #464748;
-  font-size: 1.2rem;
+	color: #464748;
+	font-size: 1.2rem;
 }
